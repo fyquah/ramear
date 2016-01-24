@@ -26,7 +26,7 @@ static inline void steroids() {
 
 static inline void transmit_plain_bit(uint8_t bit) {
 	clock_t begin = clock();
-	if (bit == 0) {
+	if (bit == 1) {
 		while(clock() - begin < PULSE_WIDTH) {
 			steroids();
 		}
