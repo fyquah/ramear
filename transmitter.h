@@ -3,6 +3,8 @@
 #include <time.h>
 #include <stdlib.h>
 #include <emmintrin.h>
+#include <pthread.h>
+#include <stdbool.h>
 
 void transmit_init();
 void transmit_free();
