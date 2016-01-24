@@ -3,8 +3,8 @@
 #define PULSE_WIDTH 500000
 static volatile __m128i * buffer;
 static volatile __m128i reg;
-uint8_t begin_string[1] = { 0b01010101 };
-uint8_t end_string[1] =   { 0b10101101 };
+uint8_t begin_string[1] = { 0b10101001 };
+uint8_t end_string[1] =   { 0b11111111 };
 
 
 static inline uint32_t current_time() {
