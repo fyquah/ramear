@@ -58,6 +58,24 @@ Unfortunately, we do not know the name of the model and the exact specs,
 other than the RAM being 667 MHz. The configurations above might be
 different depending on the specs of the computer.
 
+In our implementation, we run the following:
+
+```bash
+$ mkfifo FIFOSamples.csv
+$ bladerf-cli
+bladerf > rx start
+bladerf > rx config file=sample.fifo n=0 format=csv
+# Then start the python script
+$ python main.py
+
+## ON THE MACHINE Transmitting signal
+$ cd RAMEAR && ./main
+```
+
+
+
+It is possible to script this in python / bash.
+
 ## Reference
 
 * Guri, M., Kachlon, A., Hasson, O., Kedma, G., Mirsky, Y. and Elovici, Y., 2015. GSMem: data exfiltration from air-gapped computers over GSM frequencies. In *24th USENIX Security Symposium (USENIX Security 15)* (pp. 849-864).
