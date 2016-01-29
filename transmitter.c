@@ -1,6 +1,6 @@
 #include "transmitter.h"
 #define BUFFER_SIZE 164096
-#define PULSE_WIDTH 500000
+#define PULSE_WIDTH (CLOCKS_PER_SEC * 0.5)
 static volatile __m128i * buffer;
 static volatile __m128i reg;
 uint8_t begin_string[1] = { 0b10101001 };
