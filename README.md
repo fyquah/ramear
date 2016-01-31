@@ -4,7 +4,8 @@ RAMEAR is a project from [PennApps](pennapps.com) Spring 2016. RAMEAR uses the R
 from exciting the data bus between memory and CPU to transmit data off an air-gapped
 computer. When the data bus is excited with random data, the data bus transmit an
 above-average RF signal (due to power). The project utilizes this fact to transmit
-binary signals.
+binary signals. Our project is inspired by [GSMem by M. Guri, et al](https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-guri-update.pdf)
+(see reference below).
 
 During the hackathon, we were able to transmit the signal from as far as `20cm` at a
 rate of `2 bits/second`. Although realistically this isn't fast enough to transmit
