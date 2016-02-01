@@ -24,12 +24,6 @@ require root (aka `sudo`) access.
 [Project at devpost](http://devpost.com/software/ramear)
 
 
-## The Science
-
-For technicalities / science of the project, checkout:
-
-* [A blog post by Fu Yong (mainly about tranmistting signals)](http://www.fyquah.me/ramear)
-
 ## Code Structure
 
 On the machine transmitting signals
